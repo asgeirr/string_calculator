@@ -10,7 +10,7 @@ RSpec::Core::RakeTask.new(:spec) do |t|
 end
 
 Cucumber::Rake::Task.new(:features) do |t|
-	t.cucubmer_opts = "features/sinatra.feature --format pretty"
+	t.cucumber_opts = "features/sinatra.feature --format pretty"
 end
 
 task :default => [:spec, :features]
